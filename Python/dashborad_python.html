@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard Python</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <div id="dashboard-python"></div>
+  <script>
+    var data = [
+      {
+        x: ['Giraffes', 'Orangutans', 'Monkeys'],
+        y: [20, 14, 23],
+        type: 'bar'
+      }
+    ];
+
+    var layout = {
+      title: 'Animals'
+    };
+
+    Plotly.newPlot('dashboard-python', data, layout);
+  </script>
+</body>
+</html>
